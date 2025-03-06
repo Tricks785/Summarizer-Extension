@@ -1,0 +1,165 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    width: 360px;
+    background-color: #9EC0DF;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subscribe-button {
+    background-color: #FF8C00;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #FFA31A;
+}
+
+/* Content Section */
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.usage-info {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+textarea,
+.input-container input[type="text"],
+#urlInput {
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+}
+
+textarea:focus,
+.input-container input[type="text"]:focus,
+#urlInput:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(59, 130, 246, 0.3);
+    border-color: #3B82F6;
+}
+
+textarea::placeholder,
+.input-container input::placeholder,
+#urlInput::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Input Container for File Upload */
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.input-container:focus-within {
+    box-shadow: 0px 0px 8px rgba(59, 130, 246, 0.3);
+    border-color: #3B82F6;
+}
+
+.input-container input[type="file"] {
+    display: none;
+    /* Hide default file input */
+}
+
+.attach-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.attach-label img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Summarize Button */
+.summarize-button {
+    display: block;
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 24px;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.summarize-button:hover {
+    background-color: #2563EB;
+    transform: scale(1.05);
+}
+
+/* Summary Section */
+#summary {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-height: 60px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
